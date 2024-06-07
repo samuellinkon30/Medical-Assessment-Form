@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="info-user">
+        <div class="input-group mb-3">
+            <label class="label_ratting">Fale um pouco sobre você</label>    
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="avaliador-nome" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" name="avaliador-email" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" name="avaliador-telefone" placeholder="Telefone" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="tabs">
+        <ul class="tab-links">
+            <li class="active"><a href="#tab1">Atendimento</a></li>
+            <li><a href="#tab2">Estrutura</a></li>
+            <li><a href="#tab3">Call Center</a></li>
+            <li><a href="#tab4">...</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab1" class="tab active">
+                <form action="" id="especialista-avaliacao-form">
+                    <div class="input-group mb-3 ratting">
+                        <label class="label_ratting">Atendimento Geral: </label>    
+                        <div class="rating">
+                            <input type="radio" id="star5" name="avaliacao" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="avaliacao" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="avaliacao" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="avaliacao" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="avaliacao" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                    <p>De 1 a 5 estrelas, como avalia a experiência?</p>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" name="avaliador-comment"></textarea>
+                    </div>
+                    <input type="hidden" id="especialista-id" value="12989">
+                    <center>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </center>
+                </form>
+            </div>
+              <div id="tab2" class="tab">
+                <form action="" id="especialista-avaliacao-form">
+                    <div class="input-group mb-3 ratting">
+                        <label class="label_ratting">Estrutura: </label>    
+                        <div class="rating">
+                            <input type="radio" id="star5" name="avaliacao" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="avaliacao" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="avaliacao" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="avaliacao" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="avaliacao" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                    <p>De 1 a 5 estrelas, como avalia a experiência?</p>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" name="avaliador-comment"></textarea>
+                    </div>
+                    <input type="hidden" id="especialista-id" value="12989">
+                    <center>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </center>
+                </form>
+            </div>
+            <div id="tab3" class="tab">
+                <form action="" id="especialista-avaliacao-form">
+                    <div class="input-group mb-3 ratting">
+                        <label class="label_ratting">Call Center: </label>    
+                        <div class="rating">
+                            <input type="radio" id="star5" name="avaliacao" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="avaliacao" value="4" data-gtm-form-interact-field-id="2">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="avaliacao" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="avaliacao" value="2" data-gtm-form-interact-field-id="1">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="avaliacao" value="1" data-gtm-form-interact-field-id="0">
+                            <label for="star1"></label>
+                        </div>
+                        
+                        </div>
+                    <p>De 1 a 5 estrelas, como avalia a experiência?</p>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" name="avaliador-comment"></textarea>
+                    </div>
+                    <input type="hidden" id="especialista-id" value="12989">
+                    <center>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </center>
+                </form>
+            </div>
+            <div id="tab4" class="tab">
+                <form action="" id="especialista-avaliacao-form">
+                    <div class="input-group mb-3 ratting">
+                        <label class="label_ratting">Avaliação Geral: </label>    
+                        <div class="rating">
+                            <input type="radio" id="star5" name="avaliacao" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="avaliacao" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="avaliacao" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="avaliacao" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="avaliacao" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                    <p>De 1 a 5 estrelas, como avalia a experiência?</p>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea" name="avaliador-comment"></textarea>
+                    </div>
+                    <input type="hidden" id="especialista-id" value="12989">
+                    <center>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-links li {
+    margin: 0;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.tab-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.tab-links li.active {
+    background: #f9f9f9;
+    border-top: 2px solid #01cab8;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #01cab8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating input {
+    display: none;
+}
+
+/* .rating label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSIjY2NjY2NjIiBkPSJNMTIgMC41MzNsMy42MTQgMTAuOTgzSDE5bC00LjgxNiAzLjQ5OCAxLjg1NCA1LjgwMWwtNC44MTYtMy40OTYtNC44MTYgMy40OTYgMS44NTQtNS44MDFMNSAyLjUxMUg3LjM4N0wxMiAwLjUzM3pNNi45MzUgOS4wMTFMMTIgMy43NzFsNS4wNjUgNS4yNDMtNi43MzEtMC4wMzctMS43MzcgNS40OTlMMTEuOTQxIDE0Ljk0IDEyIDE0Ljk2N3YtNi4xNzdMOS4wNjUgMTAuMzA1eiIvPgo8L3N2Zz4K');
+    background-size: cover;
+    cursor: pointer;
+} */
+
+/* .rating input:checked ~ label,
+.rating input:checked ~ label ~ label {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSIjRkRDNzA0IiBkPSJNMTIgMC41MzNsMy42MTQgMTAuOTgzSDE5bC00LjgxNiAzLjQ5OCAxLjg1NCA1LjgwMWwtNC44MTYtMy40OTYtNC44MTYgMy40OTYgMS44NTQtNS44MDFMNSAyLjUxMUg3LjM4N0wxMiAwLjUzM3pNNi45MzUgOS4wMTFMMTIgMy43NzFsNS4wNjUgNS4yNDMtNi43MzEtMC4wMzctMS43MzcgNS40OTlMMTEuOTQxIDE0Ljk0IDEyIDE0Ljk2N3YtNi4xNzdMOS4wNjUgMTAuMzA1eiIvPgo8L3N2Zz4K');
+    background-size: cover;
+} */
+.gda-plugin {
+    background-image: url(https://realortopediacto.com.br/wp-content/uploads/2023/08/1920X1200-EQUIPE-2-DIREITA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    min-height: 100vh;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 5% 2%;
+}
+
+.success-message {
+    color: green;
+    font-size: 24px;
+    margin-top: 15%;
+    font-weight: 500;
+    background: #ffffffc4;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.review-ratting {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: white;
+}
+.icon:before {
+    color: gray;
+    font-family: dashicons;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: never;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+    margin-right:5px;
+}
+.icon.star:before{
+    content: "\f155";
+    color: gold;
+}
+.icon.user:before{
+    content: "\f110";
+}
+.icon.especialidade:before{
+    content: "\f313";
+}
+.icon.avalicacao:before{
+    content: "\f510";
+}
+
+               
+.checked {
+    color: orange;
+}
+.logo{
+    height: 80px;
+    width: auto;
+    height: 70px;
+    display: block;
+}
+
+span.fa.fa-star {
+    font-size: 35px;
+    margin: 0 15px;
+}
+.label_ratting{
+    font-size: 24px;
+    margin-right: 15px;
+}
+/* .row {
+    text-align: left;
+} */
+textarea.form-control {
+    min-height: 100px;
+}
+/* a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+ul {
+    margin:0;
+} */
+
+span.fa.fa-star:hover {
+    color: gold;
+    transition: all 500ms linear;
+}
+.input-group.mb-3.ratting {
+    margin: 0!important;
+}
+
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2605";
+    color: #ccc;
+}
+
+.rating input:checked ~ label::before,
+.rating label:hover ~ label::before {
+    color: #ffcc00;
+}
+button.btn.btn-success {
+    width: 200px;
+    margin: 15px 8px;
+}
+
+@media only screen and (max-width:900px){
+    img.rounded.float-start {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .gda-plugin .row {
+        display: block;
+        text-align: center;
+    }
+
+    .gda-plugin p{
+        text-align: left;
+    }
+}
+
+
+.icons ul {
+    display: flex;
+    gap: 15px;
+}
+.banner{
+    background-image: url('https://realortopediacto.com.br/wp-content/uploads/2021/09/hero_DrCV.jpg');
+    min-height: 300px;
+}
+.icons svg {
+    width: 23px;
+}
+.icons ul li {
+    list-style: none;
+}
+.button-hedaer .button {
+    text-align: center;
+    font-size: 16px;
+    background-color: #01cab8;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+.button-hedaer svg {
+    width: 20px;
+    margin-right: 10px;
+}
+.content .about {
+    background-image: url(https://realortopediacto.com.br/wp-content/uploads/2021/09/background_07.jpg);
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.image_about img {
+    width: 500px;
+    margin-top: -100px;
+    border-radius: 10px;
+}
+p.description {
+    max-width: 85%;
+    font-size: 17px;
+    margin: 20px 0px;
+    line-height: 22px;
+    text-align: left;
+}
+h2.title {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+h4.subtitle {
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+
+}
+p.ratting svg {
+    width: 30px;
+}
+p.ratting svg path {
+    fill: gold;
+    stroke: gold;
+}
+a.rait {
+    background-color: #ffffff00;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 90px;
+}
+a.rait svg {
+    width: 25px;
+}
+.txt {
+    width: 40%;
+    padding: 20px 10px;
+}
+.box {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.content_box_item.active {
+    padding: 40px 10px;
+    display: block;
+    background-color: #c8f5f8;
+    line-height: 25px;
+}
+.content_box_item {
+    display: none;
+    padding: 20px 10px;
+    background-color: #c8f5f8;
+}
+section.content_secondary {
+    margin-top: 4%;
+}
+.box_ratting {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.box_ratting h3, h4, p {
+    margin: 5px 0px;
+}
+
+.rating label {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px){
+
+    .content .about {
+        display: block;
+    }
+    .txt {
+        width: 100%;
+    }
+    .banner {
+        display: none;
+    }
+    .box_ratting {
+        margin: 20px;
+    }
+    .box {
+        width: 100%;
+        margin: 10px!important;
+    }    
+
+    li.last_item{
+        display: none;
+    }
+    .image_about img {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        border-radius: 20px;
+    }
+    p.description {
+        max-width: 97%;
+    }
+    .content .about {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+    }
+}
+</style>
+
+<script>
+    $(document).ready(function() {
+    $('.tab-links a').on('click', function(e) {
+        e.preventDefault();
+        var currentAttrValue = $(this).attr('href');
+
+        // Show/Hide Tabs
+        $('.tab' + currentAttrValue).fadeIn(400).siblings().hide();
+
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+    });
+});
+
+</script>
